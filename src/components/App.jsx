@@ -1,16 +1,11 @@
 import React from 'react'
 // import Header from './Header'
-import HomePage from '../pages/home';
+import IndexPage from '../pages/index';
 
 // Where react router will be inited
 const App = ({ children }) =>
   <div>
-    <h4>Header</h4>
-    <div>
-      {/* {children} */}
-
-      <HomePage/>
-    </div>
+    <IndexPage/>
   </div>
 
 export default App
