@@ -1,0 +1,57 @@
+.sidenav {    
+    height: 100%; /* 100% Full-height */
+    min-width:0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top:0;
+    left: 0;
+    padding-top: 84px; /* Place content 60px from the top */
+    background-color: #222222;    
+    border-color: #080808;      
+    overflow: hidden;
+    transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+    transition-delay: 0.5s;
+}
+
+.sidenav .nav-sit-bottom{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:#292929;
+    padding:12px;
+    box-shadow:inset 0px 0px 10px #000;   
+    margin-bottom: 1px;
+}
+
+.sidenav .nav-sit-bottom a{    
+    color:white;
+    border-radius: 4px;
+    position: relative;
+}
+
+.sidenav .nav-sit-bottom li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    /* font-size: 25px; */    
+    display: block;
+}
+/* The navigation menu links */
+.sidenav li a {  
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    /* font-size: 25px; */
+    color: #818181;
+    display: block;
+    transition: 0.9s;
+    /* transition-delay: 0.9s; */
+}
+
+.sidenav .sub-nav{
+    /* color:red; */
+}
+
+/* When you mouse over the navigation links, change their color */
+
+
+
+
