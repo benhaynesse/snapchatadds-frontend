@@ -27,7 +27,7 @@ class Sidebar extends React.Component {
             <li key={idx} className={idx === this.state.activeKey ? "active" : ""}
                 onClick={() => this.handleSelectKey(idx)}
             >
-                    <a href="#home">{item}</a>
+                    <a href={`#${item}`}>{item}</a>
             </li>
             )
         })
@@ -40,8 +40,8 @@ class Sidebar extends React.Component {
                 </ul>
 
                 <ul className="sub-nav nav nav-stacked nav-sit-bottom">
-                    <li><a>Blog</a></li>
-                    <li><a>Log Out</a></li>                    
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#logout">Log Out</a></li>                    
                 </ul>
 
             </div>

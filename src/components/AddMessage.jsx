@@ -4,8 +4,7 @@ class AddMessage extends Component {
 
     state = {
         inputText : ""
-    }
-    
+    }    
 
     handleClick(event){        
         this.props.handleClick(this.state.inputText);
