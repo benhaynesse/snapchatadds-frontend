@@ -1,18 +1,47 @@
 .card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);  
-  margin-top: 10px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-clip: padding-box;
-  max-width:200px;
-  height:250px;
-  margin:10px auto; 
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-clip: padding-box;
+    max-width: 200px;
+    height: 250px;
+    margin: 10px auto;
+    transition: all .4s ease-in-out;
+    padding: 1px;
 }
 
+@media (max-width: 385px) {
+    .card{
+      height:300px;
+      max-width:300px;
+    }
+    .col-xs-6 {
+        width: 100%;
+    }
+
+
+    .card .card-image span.card-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 24px;
+  }
+  
+  .card .card-action {
+      
+      padding: 24px;
+      
+  }
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
 
 .card span.card-title {
-  background:rgb(22,22,22,0.7);
-  width:100%;
+    background: rgba(22, 22, 22, 0.7);
+    width: 100%;
     color: #fff;
     font-size: 14px;
     font-weight: 300;
@@ -20,41 +49,45 @@
 }
 
 .card .card-image {
-  position: relative;
-  overflow: hidden;
-/*   height:300px;   */
-  /* height:250px; */
-  height:80%;
+    position: relative;
+    overflow: hidden;
+    /*   height:300px;   */
+    /* height:250px; */
+    height: 80%;
 }
+
 .card .card-image img {
-  border-radius: 4px 4px 0 0;
-  background-clip: padding-box;
-  position: relative;
-  /* z-index: -1;  */
-  height:100%;
-  width:100%;
+    border-radius: 4px 4px 0 0;
+    background-clip: padding-box;
+    position: relative;
+    /* z-index: -1;  */
+    height: 100%;
+    width: 100%;
 }
+
 .card .card-image span.card-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
 }
 
 .card .card-action {
-  border-top: 1px solid rgba(160, 160, 160, 0.2);
-  padding: 16px;
-  background:#000;
-  /* border-bottom: 2px solid pink; */
-  height:20%;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 16px;
+    background: #000;
+    /* border-bottom: 2px solid pink; */
+    height: 20%;
 }
+
 .card .card-action a {
-  color: #ffab40;
-  margin-right: 16px;
-  transition: color 0.3s ease;
-  text-transform: uppercase;
+    color: #ffab40;
+    margin-right: 16px;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
 }
+
 .card .card-action a:hover {
-  color: #ffd8a6;
-  text-decoration: none;
+    color: #ffd8a6;
+    text-decoration: none;
 }
